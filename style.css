@@ -1,3 +1,71 @@
+/* ---------- Book cards ---------- */
+.book-card {
+  background: #fff;
+  border-radius: var(--luxe-radius);
+  overflow: hidden;
+  box-shadow: var(--luxe-shadow-sm);
+  border: 1px solid var(--luxe-border);
+  transition: var(--luxe-transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--luxe-shadow-lg);
+}
+.book-cover {
+  height: 260px;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+.book-card:hover .book-cover img {
+  transform: scale(1.08);
+}
+.book-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.book-title {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+.book-author {
+  color: var(--luxe-muted);
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+.book-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--luxe-gold);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+.book-rating span {
+  color: var(--luxe-text);
+  font-weight: 600;
+  margin-left: 6px;
+  font-size: 0.9rem;
+}
+.book-desc {
+  color: var(--luxe-muted);
+  flex: 1;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+}
+
 /* ---------- Author cards ---------- */
 .author-card {
   text-align: center;
