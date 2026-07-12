@@ -295,7 +295,7 @@
   box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.3);
 }
 
-<<<<<<< HEAD
+
 :root {
   --luxe-primary: #1E3A8A;
   --luxe-primary-dark: #172d6b;
@@ -452,7 +452,6 @@ img { max-width: 100%; }
   border-color: var(--luxe-primary);
   box-shadow: 0 0 0 4px rgba(30, 58, 138, .08);
   outline: none;
-=======
 
 /* ---------- Hero ---------- */
 .luxe-hero {
@@ -541,5 +540,4 @@ img { max-width: 100%; }
   background: var(--luxe-primary);
   color: #fff;
   transform: scale(1.05);
->>>>>>> Home
 }
