@@ -1,6 +1,143 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
- <!-- ============ FEATURED BOOKS ============ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luxe Library — A Premium Online Library</title>
+  <meta name="description" content="A premium, modern online library offering curated books across science, technology, medicine, history, literature and programming." />
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Custom -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg sticky-top luxe-navbar">
+    <div class="container">
+      <a class="navbar-brand luxe-brand" href="#">
+        <span class="brand-mark"><i class="bi bi-book-half"></i></span>
+        <span class="brand-name">Luxe<span class="brand-accent">Library</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#luxeNav" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="luxeNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#authors">Authors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <form class="d-flex align-items-center gap-2" role="search" onsubmit="return false;">
+          <div class="luxe-search">
+            <i class="bi bi-search"></i>
+            <input class="form-control" type="search" placeholder="Search books..." aria-label="Search" />
+          </div>
+          <a href="#" class="btn btn-luxe-primary">Login</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- ============ HERO ============ -->
+  <header id="home" class="luxe-hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="luxe-eyebrow">Premium Online Library</span>
+          <h1 class="luxe-hero-title">
+            Discover a world of <span class="text-gold">timeless</span> reading.
+          </h1>
+          <p class="luxe-hero-sub">
+            Explore a hand-curated collection of over 25,000 books across science, literature, technology and beyond — beautifully organized, always at your fingertips.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#books" class="btn btn-luxe-primary btn-lg">Browse Books</a>
+            <a href="#about" class="btn btn-luxe-outline btn-lg">Learn More</a>
+          </div>
+          <div class="hero-meta mt-5">
+            <div><strong>25K+</strong><span>Books</span></div>
+            <div><strong>1.2K</strong><span>Authors</span></div>
+            <div><strong>4.9★</strong><span>Rating</span></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" alt="Elegant library with warm lighting" class="hero-img" />
+            <div class="hero-card">
+              <i class="bi bi-award-fill text-gold"></i>
+              <div>
+                <strong>Award-winning</strong>
+                <span>Curated collection 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ============ CATEGORIES ============ -->
+  <section id="categories" class="luxe-section">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="luxe-eyebrow">Explore</span>
+        <h2 class="section-title">Featured Categories</h2>
+        <p class="section-sub">Dive into curated collections across the fields shaping human knowledge.</p>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="#" class="category-card">
+            <i class="bi bi-atom"></i>
+            <h5>Science</h5>
+            <span>1,240 books</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="#" class="category-card">
+            <i class="bi bi-cpu"></i>
+            <h5>Technology</h5>
+            <span>980 books</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="#" class="category-card">
+            <i class="bi bi-heart-pulse"></i>
+            <h5>Medicine</h5>
+            <span>620 books</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="#" class="category-card">
+            <i class="bi bi-hourglass-split"></i>
+            <h5>History</h5>
+            <span>1,800 books</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="#" class="category-card">
+            <i class="bi bi-feather"></i>
+            <h5>Literature</h5>
+            <span>2,140 books</span>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="#" class="category-card">
+            <i class="bi bi-code-slash"></i>
+            <h5>Programming</h5>
+            <span>760 books</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ FEATURED BOOKS ============ -->
   <section id="books" class="luxe-section luxe-section-alt">
     <div class="container">
       <div class="section-head text-center">
@@ -120,228 +257,99 @@
       </div>
     </div>
   </section>
- <!-- ============ HERO ============ -->
-  <header id="home" class="luxe-hero">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <span class="luxe-eyebrow">Premium Online Library</span>
-          <h1 class="luxe-hero-title">
-            Discover a world of <span class="text-gold">timeless</span> reading.
-          </h1>
-          <p class="luxe-hero-sub">
-            Explore a hand-curated collection of over 25,000 books across science, literature, technology and beyond — beautifully organized, always at your fingertips.
-          </p>
-          <div class="d-flex flex-wrap gap-3 mt-4">
-            <a href="#books" class="btn btn-luxe-primary btn-lg">Browse Books</a>
-            <a href="#about" class="btn btn-luxe-outline btn-lg">Learn More</a>
-          </div>
-          <div class="hero-meta mt-5">
-            <div><strong>25K+</strong><span>Books</span></div>
-            <div><strong>1.2K</strong><span>Authors</span></div>
-            <div><strong>4.9★</strong><span>Rating</span></div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="hero-visual">
-            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80" alt="Elegant library with warm lighting" class="hero-img" />
-            <div class="hero-card">
-              <i class="bi bi-award-fill text-gold"></i>
-              <div>
-                <strong>Award-winning</strong>
-                <span>Curated collection 2026</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-   <!-- ============ CATEGORIES ============ -->
-  <section id="categories" class="luxe-section">
+  <!-- ============ AUTHORS ============ -->
+  <section id="authors" class="luxe-section">
     <div class="container">
       <div class="section-head text-center">
-        <span class="luxe-eyebrow">Explore</span>
-        <h2 class="section-title">Featured Categories</h2>
-        <p class="section-sub">Dive into curated collections across the fields shaping human knowledge.</p>
+        <span class="luxe-eyebrow">Voices</span>
+        <h2 class="section-title">Popular Authors</h2>
+        <p class="section-sub">Meet the storytellers and thinkers behind our most-loved titles.</p>
       </div>
       <div class="row g-4 mt-2">
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#" class="category-card">
-            <i class="bi bi-atom"></i>
-            <h5>Science</h5>
-            <span>1,240 books</span>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#" class="category-card">
-            <i class="bi bi-cpu"></i>
-            <h5>Technology</h5>
-            <span>980 books</span>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#" class="category-card">
-            <i class="bi bi-heart-pulse"></i>
-            <h5>Medicine</h5>
-            <span>620 books</span>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#" class="category-card">
-            <i class="bi bi-hourglass-split"></i>
-            <h5>History</h5>
-            <span>1,800 books</span>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#" class="category-card">
-            <i class="bi bi-feather"></i>
-            <h5>Literature</h5>
-            <span>2,140 books</span>
-          </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <a href="#" class="category-card">
-            <i class="bi bi-code-slash"></i>
-            <h5>Programming</h5>
-            <span>760 books</span>
-          </a>
-=======
-<!-- ============ AUTHORS ============ -->
-<section id="authors" class="luxe-section">
-  <div class="container">
-    <div class="section-head text-center">
-      <span class="luxe-eyebrow">Voices</span>
-      <h2 class="section-title">Popular Authors</h2>
-      <p class="section-sub">
-        Meet the storytellers and thinkers behind our most-loved titles.
-      </p>
-    </div>
-    <div class="row g-4 mt-2">
-      <div class="col-6 col-md-3">
-        <div class="author-card">
-          <img
-            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
-            alt="Amelia Hartwell"
-          />
-          <h5>Amelia Hartwell</h5>
-          <span>Literary Fiction</span>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="author-card">
-          <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
-            alt="Daniel Osei"
-          />
-          <h5>Daniel Osei</h5>
-          <span>Design &amp; Systems</span>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="author-card">
-          <img
-            src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80"
-            alt="Sofia Marín"
-          />
-          <h5>Sofia Marín</h5>
-          <span>Technology</span>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="author-card">
-          <img
-            src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80"
-            alt="Noor El-Sayed"
-          />
-          <h5>Noor El-Sayed</h5>
-          <span>Historical Fiction</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- State -->
-<section class="luxe-stats">
-  <div class="container">
-    <div class="row g-4 text-center">
-      <div class="col-6 col-md-3">
-        <div class="stat">
-          <span class="stat-num">25,000+</span
-          ><span class="stat-label">Books</span>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="stat">
-          <span class="stat-num">1,200+</span
-          ><span class="stat-label">Autors</span>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="stat">
-          <span class="stat-num">98,400</span
-          ><span class="stat-label">Members</span>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="stat">
-          <span class="stat-num">42</span><span class="stat-label">Awards</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHY CHOOSE US ============ -->
-<section id="about" class="luxe-section">
-  <div class="container">
-    <div class="section-head text-center">
-      <span class="luxe-eyebrow">Why Luxe Library</span>
-      <h2 class="section-title">A library, refined.</h2>
-      <p class="section-sub">
-        Every details - from curation to typography - is designed for readers
-        who value quality.
-      </p>
-    </div>
-    <div class="row g-4 mt-2">
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="bi bi-collection-fill"></i></div>
-          <h4>Huge Collection</h4>
-          <p>
-            Over 25,000 handpicked titles across science, literature, technology
-            and beyond — updated weekly by our editors.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <i class="bi bi-lightning-charge-fill"></i>
+        <div class="col-6 col-md-3">
+          <div class="author-card">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Amelia Hartwell" />
+            <h5>Amelia Hartwell</h5>
+            <span>Literary Fiction</span>
           </div>
-          <h4>Easy Access</h4>
-          <p>
-            Read anywhere on any device. A seamless, distraction-free reader
-            designed to disappear behind the words.
-          </p>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
-          <h4>Trusted Library</h4>
-          <p>
-            A decade of curation, transparent sources and partnerships with
-            leading publishers worldwide.
-          </p>
+        <div class="col-6 col-md-3">
+          <div class="author-card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Daniel Osei" />
+            <h5>Daniel Osei</h5>
+            <span>Design &amp; Systems</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="author-card">
+            <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Sofia Marín" />
+            <h5>Sofia Marín</h5>
+            <span>Technology</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="author-card">
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Noor El-Sayed" />
+            <h5>Noor El-Sayed</h5>
+            <span>Historical Fiction</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- ============ TESTIMONIALS ============ -->
+  </section>
+  <!-- ============ STATS ============ -->
+  <section class="luxe-stats">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="stat"><span class="stat-num">25,000+</span><span class="stat-label">Books</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat"><span class="stat-num">1,200+</span><span class="stat-label">Authors</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat"><span class="stat-num">98,400</span><span class="stat-label">Members</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat"><span class="stat-num">42</span><span class="stat-label">Awards</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section id="about" class="luxe-section">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="luxe-eyebrow">Why LuxeLibrary</span>
+        <h2 class="section-title">A library, refined.</h2>
+        <p class="section-sub">Every detail — from curation to typography — is designed for readers who value quality.</p>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-collection-fill"></i></div>
+            <h4>Huge Collection</h4>
+            <p>Over 25,000 handpicked titles across science, literature, technology and beyond — updated weekly by our editors.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <h4>Easy Access</h4>
+            <p>Read anywhere on any device. A seamless, distraction-free reader designed to disappear behind the words.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+            <h4>Trusted Library</h4>
+            <p>A decade of curation, transparent sources and partnerships with leading publishers worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ TESTIMONIALS ============ -->
   <section class="luxe-section luxe-section-alt">
     <div class="container">
       <div class="section-head text-center">
@@ -378,96 +386,10 @@
               <div><strong>Aiko Tanaka</strong><span>Editor</span></div>
             </figcaption>
           </figure>
->>>>>>> autors-about
         </div>
       </div>
     </div>
   </section>
-<<<<<<< HEAD
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Luxe Library — A Premium Online Library</title>
-    <meta
-      name="description"
-      content="A premium, modern online library offering curated books across science, technology, medicine, history, literature and programming."
-    />
-    <!-- Bootstrap 5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-    />
-    <!-- Google Fonts: Playfair Display + Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Custom -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand=lg sticky-top luxe-navbar">
-      <div class="container">
-        <a href="#" class="navbar-brand luxe-brand">
-          <span class="brand-mark"><i class="bi bi-book-half"></i></span>
-          <span class="brand-name"
-            >Luxe
-            <span class="brand-accent">Library</span>
-          </span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#luxeNav"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="luxeNav">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="#home" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#books" class="nav-link">Books</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#categories">Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#authors">Authors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-          <form class="d-flex align-items-center gap-2" role="search" onsubmit="return false;">
-          <div class="luxe-search">
-            <i class="bi bi-search"></i>
-            <input class="form-control" type="search" placeholder="Search books..." aria-label="Search" />
-          </div>
-          <a href="#" class="btn btn-luxe-primary">Login</a>
-        </form>
-        </div>
-      </div>
-    </nav>
-  </body>
-</html>
-=======
   <!-- ============ FAQ ============ -->
   <section class="luxe-section">
     <div class="container">
@@ -519,8 +441,30 @@
               </div>
             </div>
           </div>
-=======
-<!-- ============ CONTACT ============ -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="luxe-newsletter">
+    <div class="container">
+      <div class="newsletter-card">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h3>Join our weekly reading letter.</h3>
+            <p>A curated dispatch of new arrivals, editor picks and rare finds — delivered every Sunday.</p>
+          </div>
+          <div class="col-lg-5">
+            <form class="newsletter-form" onsubmit="return false;">
+              <input type="email" class="form-control" placeholder="Your email address" aria-label="Email" required />
+              <button type="submit" class="btn btn-luxe-gold">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ CONTACT ============ -->
   <section id="contact" class="luxe-section">
     <div class="container">
       <div class="row g-5 align-items-center">
@@ -554,34 +498,10 @@
               </div>
             </div>
           </form>
->>>>>>> contact-footer
         </div>
       </div>
     </div>
   </section>
-<<<<<<< HEAD
-<!-- ============ NEWSLETTER ============ -->
-  <section class="luxe-newsletter">
-    <div class="container">
-      <div class="newsletter-card">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-7">
-            <h3>Join our weekly reading letter.</h3>
-            <p>A curated dispatch of new arrivals, editor picks and rare finds — delivered every Sunday.</p>
-          </div>
-          <div class="col-lg-5">
-            <form class="newsletter-form" onsubmit="return false;">
-              <input type="email" class="form-control" placeholder="Your email address" aria-label="Email" required />
-              <button type="submit" class="btn btn-luxe-gold">Subscribe</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
->>>>>>> autors-about
-=======
-
   <!-- ============ FOOTER ============ -->
   <footer class="luxe-footer">
     <div class="container">
@@ -632,4 +552,5 @@
   </footer>
   <!-- Bootstrap Bundle (for accordion + collapse only) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
->>>>>>> contact-footer
+</body>
+</html>
